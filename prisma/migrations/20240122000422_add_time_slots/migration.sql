@@ -1,0 +1,5 @@
+-- CreateTable
+CREATE TABLE "TimeSlot" (
+    "id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+    "time" TEXT NOT NULL
+);

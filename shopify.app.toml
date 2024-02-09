@@ -1,0 +1,28 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "e723e5f5dda9e622110bf8580c925876"
+name = "branded-merchant-app"
+application_url = "https://112b-2607-fea8-28e6-1d00-e912-ac04-e1c5-a10a.ngrok-free.app"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "umarttesting.myshopify.com"
+include_config_on_deploy = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products,write_customers,write_draft_orders,write_purchase_options,read_inventory,write_inventory,read_orders"
+
+[auth]
+redirect_urls = [
+  "https://112b-2607-fea8-28e6-1d00-e912-ac04-e1c5-a10a.ngrok-free.app/auth/callback",
+  "https://112b-2607-fea8-28e6-1d00-e912-ac04-e1c5-a10a.ngrok-free.app/auth/shopify/callback",
+  "https://112b-2607-fea8-28e6-1d00-e912-ac04-e1c5-a10a.ngrok-free.app/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-01"
+
+[pos]
+embedded = false
