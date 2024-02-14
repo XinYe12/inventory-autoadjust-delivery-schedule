@@ -6,9 +6,9 @@ export const action = async ({ request }) => {
   const { topic, shop, session, admin, payload } = await authenticate.webhook(
     request
   );
-  
-  console.log("payload: ", payload.name);
 
+  console.log("payload: ", payload); 
+      
   if (!admin) {
     // The admin context isn't returned if the webhook fired after a shop was uninstalled.
     throw new Response();
@@ -259,7 +259,7 @@ export const action = async ({ request }) => {
         }//  end of if statement to check if it is a soldincase product
         break;
     case "ORDERS_CREATE":
-      
+      console.log("order received");
       break;
     case "CUSTOMERS_DATA_REQUEST":
     case "CUSTOMERS_REDACT":

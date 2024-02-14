@@ -1,8 +1,8 @@
 # Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
 
-client_id = "e57b2388aa10dc97a4c7f9132740ae86"
-name = "delivery schedule"
-handle = "delivery-schedule-6"
+client_id = "bc553512213ab65de11aa7b53ce44122"
+name = "branded-merchant-app"
+handle = "branded-merchant-app-7"
 application_url = "https://df45-2607-fea8-28e6-1d00-d188-50a4-1a8-65fc.ngrok-free.app"
 embedded = true
 

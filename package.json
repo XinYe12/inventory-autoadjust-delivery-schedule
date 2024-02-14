@@ -4,7 +4,7 @@
   "scripts": {
     "build": "remix build",
     "predev": "prisma generate && prisma migrate deploy",
-    "dev": "shopify app dev --tunnel-url=https://112b-2607-fea8-28e6-1d00-e912-ac04-e1c5-a10a.ngrok-free.app:3000",
+    "dev": "shopify app dev --tunnel-url=https://df45-2607-fea8-28e6-1d00-d188-50a4-1a8-65fc.ngrok-free.app:3000",
     "config:link": "shopify app config link",
     "config:push": "shopify app config push",
     "generate": "shopify app generate",

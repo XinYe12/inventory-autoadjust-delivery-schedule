@@ -21,7 +21,8 @@ model Session {
   userId      BigInt?
 }
 model TimeSlot {
-  id    Int      @id @default(autoincrement())
-  time  String
+  id        Int      @id @default(autoincrement())
+  time      String
+  orderID   String   @default("false")
 }
 

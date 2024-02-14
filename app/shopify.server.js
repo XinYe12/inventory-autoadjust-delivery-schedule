@@ -31,7 +31,8 @@ const shopify = shopifyApp({
     ORDERS_CREATE:{
       deliveryMethod: DeliveryMethod.Http,
       callbackUrl: "/webhooks",
-    }
+    },
+
   },
   hooks: {
     afterAuth: async ({ session }) => {
